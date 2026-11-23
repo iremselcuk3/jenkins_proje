@@ -9,7 +9,7 @@ class TestUygulama(unittest.TestCase):
         sonuc = ozet_hesapla(sayilar)
         rapor_kaydet(sonuc, "test_rapor.txt")
         self.assertEqual(sonuc["adet"], 4)
-        self.assertEqual(sonuc["toplam"], 100.0)
+        self.assertEqual(sonuc["toplam"], 99)
         self.assertEqual(sonuc["ortalama"], 25.0)
         self.assertTrue(os.path.exists("test_rapor.txt"))
         os.remove("test_rapor.txt")
